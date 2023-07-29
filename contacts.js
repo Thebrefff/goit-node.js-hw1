@@ -26,8 +26,7 @@ export const addContact = async (name, email, phone) => {
   };
   allContacts.push(newContact);
   await fs.writeFile(contactsPath, JSON.stringify(allContacts, null, 2));
-  return newContact;
-  // return allContacts; - поверне масив з доданим контатом
+  return newContact;  
 };
 
 export const removeContact = async (contactId) => {

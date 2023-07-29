@@ -19,7 +19,7 @@ const invokeActions = async ({ action, id, name, email, phone }) => {
       const deleteContact = await contactsService.removeContact(id);
       return console.log(deleteContact);
     default:
-      console.log("neponyatka");
+      console.log("mistake");
   }
 };
 
